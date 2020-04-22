@@ -12,6 +12,9 @@ namespace DAL.Configurations
                 .HasKey(m => m.Id);
 
             builder
+                .HasIndex(m => m.Email).IsUnique();
+
+            builder
                 .Property(m => m.Id)
                 .UseIdentityColumn();
 

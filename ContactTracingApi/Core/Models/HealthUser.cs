@@ -17,6 +17,9 @@ namespace Core.Models
         public string Email { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public byte[] Password { get; set; }
+
+        [Required]
+        public byte[] PasswordSalt { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace DAL
             builder
                 .ApplyConfiguration(new HealthUserConfiguration());
 
-        }
+        } 
 
     }
 

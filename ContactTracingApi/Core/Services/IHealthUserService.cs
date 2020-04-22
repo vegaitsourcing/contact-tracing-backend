@@ -11,10 +11,9 @@ namespace Core.Services
     {
         Task<IEnumerable<HealthUser>> GetAllHealthUsers();
         Task<HealthUser> GetHealthUserById(int id);
-        Task<HealthUser> RegisterHealthUser(HealthUser newHealthUser);
+        Task<HealthUser> RegisterHealthUser(HealthUser newHealthUser, string password);
         Task UpdateHealthUser(HealthUser healthUserToBeUpdated, HealthUser healthUser);
-        Task DeleteHealthUser(HealthUser healthUser);
-
-        Task Login(HealthUserDTO healthUserDTO);
+        Task<HealthUser> DeleteHealthUser(int id);
+        Task<HealthUser> Login(LoginDTO loginDTO);
     }
 }

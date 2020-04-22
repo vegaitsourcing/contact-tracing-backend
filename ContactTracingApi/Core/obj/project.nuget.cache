@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dKRffEzbgknHhgCaihenCdbpJxPM2BmC8D3YkUrj0F9FQt6fxc/W9riPaOaQvH6dsCZtaSO2de7OXGtiYvgJ+g==",
+  "dgSpecHash": "WvXdS2UNH1LkrCImx0RAwZ9NrO0xou3E4PGaDffGlJtXU2b8kyK23lB8pzVqEbvxEoefc/Gm3+ucTltkMhMatA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vladi\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
