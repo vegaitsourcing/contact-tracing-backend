@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
     <ProjectReference Include="..\Services\Business.csproj" />
   </ItemGroup>
 
