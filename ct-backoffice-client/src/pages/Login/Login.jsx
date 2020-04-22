@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { login } from '../../store/actions/userAction';
+import { useDispatch, useSelector } from 'react-redux';
 import { Grid, Header, Form, Image, Segment, Button } from 'semantic-ui-react';
 
 const Login = () => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+  const dispatch = useDispatch();
   const history = useHistory();
+  const user = useSelector((state) => state.user);
 
   useEffect(() => {
-    if (localStorage.token) {
+    if (user.token) {
       history.push('/');
     }
   });
 
   const loginUser = () => {
     localStorage.setItem('token', 'ggfdgfdg');
+    dispatch(login(email, password));
   };
 
   return (

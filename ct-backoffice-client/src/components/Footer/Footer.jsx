@@ -7,7 +7,10 @@ const Footer = () => {
       <p className="signature">
         {' '}
         EUvsVirus Contact Tracing App © 2020, Built by
-        <a href="https://www.vegaitsourcing.rs/"> Vega IT Sourcing</a>
+        <a target="_blank" href="https://www.vegaitsourcing.rs/">
+          {' '}
+          Vega IT Sourcing
+        </a>
       </p>
     </footer>
   );
