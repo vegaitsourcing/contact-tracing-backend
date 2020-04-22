@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3J1ZYtO4ENPmjyOcArEAgwYGk4ZEYQq3SNHuT7/MsCNXnRjHRe+xTDmD4LWLSo+pa1NVzpD2dcapFq0NJ7SECQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Data\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vladi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\vladi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
