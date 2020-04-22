@@ -17,7 +17,7 @@
       },
       "Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
           "bin/placeholder/Core.dll": {}
         },
@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\ContactTracingApi\\CTBackofficeApi.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\CTBackofficeApi.csproj",
       "projectName": "CTBackofficeApi",
-      "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\ContactTracingApi\\CTBackofficeApi.csproj",
+      "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\CTBackofficeApi.csproj",
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\ContactTracingApi\\obj\\",
+      "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,6 +71,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Business\\Business.csproj"
+            },
             "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj": {
               "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj"
             },

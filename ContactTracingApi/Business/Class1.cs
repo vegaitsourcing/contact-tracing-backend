@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services
+namespace Business
 {
     public class Class1
     {
