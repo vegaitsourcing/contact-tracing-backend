@@ -6,6 +6,7 @@ export const initState = {
   error: false,
   success: false,
   loggedIn: false,
+  message: '',
 };
 
 export const userReducer = (state = initState, action) => {
@@ -14,7 +15,7 @@ export const userReducer = (state = initState, action) => {
       return { ...state, token: action.payload, error: false };
     }
     case 'USER_LOGIN_FAIL': {
-      return { ...state, token: null, error: true };
+      return { ...state, token: null, error: true, message: action.payload };
     }
     case 'USER_LOGOUT': {
       return { ...state, token: null, error: false };

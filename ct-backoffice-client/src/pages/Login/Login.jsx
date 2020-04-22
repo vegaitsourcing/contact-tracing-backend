@@ -18,7 +18,6 @@ const Login = () => {
   });
 
   const loginUser = () => {
-    localStorage.setItem('token', 'ggfdgfdg');
     dispatch(login(email, password));
   };
 
@@ -50,7 +49,7 @@ const Login = () => {
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
               />
-
+              <p style={{ color: 'red' }}>{user.message} </p>
               <Button color="blue" fluid size="large" onClick={loginUser}>
                 Login
               </Button>

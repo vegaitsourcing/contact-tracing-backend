@@ -10,6 +10,7 @@ const Header = ({ title }) => {
 
   const signOut = () => {
     localStorage.removeItem('token');
+    localStorage.removeItem('loggedUser');
     dispatch(logout());
     history.push('/');
   };
