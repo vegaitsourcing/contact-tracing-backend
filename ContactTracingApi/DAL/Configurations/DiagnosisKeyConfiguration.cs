@@ -15,17 +15,13 @@ namespace DAL.Configurations
                 .Property(m => m.DailyKey)
                 .IsRequired()
                 .HasMaxLength(128);
-            builder
-               .Property(m => m.HealthID)
-               .HasMaxLength(50);
 
             builder
                .Property(m => m.Date)
                .IsRequired();
 
-            builder
-             .Property(m => m.Confirmed)
-             .IsRequired();
+            builder.
+                Property(m => m.Diagnosis);
 
             builder
                 .ToTable("DiagnosisKeys");

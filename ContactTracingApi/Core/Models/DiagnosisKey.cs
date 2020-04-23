@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Core.Models
 {
@@ -15,13 +14,7 @@ namespace Core.Models
         [Required]
         public DateTime Date { get; set; }
 
-        [Required]
-        public bool Sent { get; set; }
-
-        [Required]
-        public bool Confirmed { get; set; }
-
-        [Required]
-        public string HealthID { get; set; }
+        [ForeignKey("DiagnosisId")]
+        public Diagnosis Diagnosis { get; set; }
     }
 }

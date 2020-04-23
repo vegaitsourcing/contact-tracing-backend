@@ -45,17 +45,5 @@ namespace Business
         {
             return await _context.DiagnosisKeys.FindAsync(id);
         }
-
-        public async Task DiagnosisKeySetToSent(DiagnosisKey diagnosisKeyToBeUpdated)
-        {
-            diagnosisKeyToBeUpdated.Sent = true;
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task ConfirmDiagnosisKey(DiagnosisKey diagnosisKeyToBeUpdated)
-        { 
-            diagnosisKeyToBeUpdated.Confirmed = true;
-            await _context.SaveChangesAsync();
-        }
     }
 }

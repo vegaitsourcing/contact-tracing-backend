@@ -9110,39 +9110,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vladi\\.nuget\\packages\\": {}
+    "/Users/stevan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\CTBackofficeApi.csproj",
+      "projectUniqueName": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/CTBackofficeApi/CTBackofficeApi.csproj",
       "projectName": "CTBackofficeApi",
-      "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\CTBackofficeApi.csproj",
-      "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\obj\\",
+      "projectPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/CTBackofficeApi/CTBackofficeApi.csproj",
+      "packagesPath": "/Users/stevan/.nuget/packages/",
+      "outputPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/CTBackofficeApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/stevan/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Business\\Business.csproj"
+            "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Business/Business.csproj": {
+              "projectPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Business/Business.csproj"
             },
-            "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj"
+            "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj": {
+              "projectPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj"
             },
-            "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\DAL\\DAL.csproj"
+            "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/DAL/DAL.csproj": {
+              "projectPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/DAL/DAL.csproj"
             }
           }
         }
@@ -9215,7 +9213,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
       }
     }
   }

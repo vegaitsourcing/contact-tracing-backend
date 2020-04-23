@@ -11,8 +11,6 @@ namespace Core.Services
         Task<IEnumerable<DiagnosisKey>> GetAllDiagnosisKeys();
         Task<DiagnosisKey> GetDiagnosisKeyById(int id);
         Task<DiagnosisKey> AddDiagnosisKey(DiagnosisKey newDiagnosisKey);
-        Task ConfirmDiagnosisKey(DiagnosisKey diagnosisKeyToBeUpdated);
-        Task DiagnosisKeySetToSent(DiagnosisKey diagnosisKeyToBeUpdated);
         Task<DiagnosisKey> DeleteDiagnosisKey(int id);
         
     }

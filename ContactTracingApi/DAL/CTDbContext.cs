@@ -25,6 +25,16 @@ namespace DAL
                 .ApplyConfiguration(new UserConfiguration());
             builder
                 .ApplyConfiguration(new DiagnosisKeyConfiguration());
+            builder
+                .ApplyConfiguration(new DiagnosisConfiguration());
+
+            //builder.Entity<Diagnosis>()
+            //       .HasMany(e => e.DiagnosisKeys)
+            //       .WithOne(c => c.Diagnosis);
+
+            //builder.Entity<DiagnosisKey>()
+            //       .HasOne(e => e.Diagnosis)
+            //       .WithMany(c => c.DiagnosisKeys);
 
         } 
 
