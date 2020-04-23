@@ -10,6 +10,8 @@ namespace DAL
     public class CTDbContext : DbContext
     {
         public DbSet<HealthUser> HealthUsers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<DiagnosisKey> DiagnosisKeys { get; set; }
 
         public CTDbContext(DbContextOptions<CTDbContext> options)
             : base(options)
@@ -19,6 +21,10 @@ namespace DAL
         {
             builder
                 .ApplyConfiguration(new HealthUserConfiguration());
+            builder
+                .ApplyConfiguration(new UserConfiguration());
+            builder
+                .ApplyConfiguration(new DiagnosisKeyConfiguration());
 
         } 
 
