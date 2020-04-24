@@ -20,9 +20,6 @@ namespace DAL.Configurations
                .Property(m => m.Date)
                .IsRequired();
 
-            builder.
-                Property(m => m.DiagnosisId);
-
             builder
                 .ToTable("DiagnosisKeys");
         }

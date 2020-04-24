@@ -13,8 +13,10 @@ namespace Core.Helpers
         {
             CreateMap<HealthUser, HealthUserDTO>();
             CreateMap<HealthUserDTO, HealthUser>();
+            CreateMap<DiagnosisDTO, Diagnosis>();
+            CreateMap<Diagnosis, DiagnosisDTO>();
+            CreateMap<DiagnosisKeyDTO, DiagnosisKey>();
+            CreateMap<DiagnosisKey, DiagnosisKeyDTO>();
         }
-
     }
-
 }

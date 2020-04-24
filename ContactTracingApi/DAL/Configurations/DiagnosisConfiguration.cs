@@ -12,13 +12,7 @@ namespace DAL.Configurations
                 .HasKey(m => m.Id);
 
             builder
-                .Property(m => m.UserId);
-
-            builder
-                .Property(m => m.Sent);
-
-            builder
-                .Property(m => m.Confirmed);
+                .Property(m => m.Date);
 
             builder
                 .ToTable("Diagnosis");

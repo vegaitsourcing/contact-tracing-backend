@@ -11,5 +11,7 @@ namespace Core.Services
     {
         Task<IEnumerable<User>> GetAllUsers();
         Task<User> GetUserById(int id);
+        Task<User> GetUserByHealthId(string healthId);
+        Task<int> UpdateUser(User user);
     }
 }

@@ -31,13 +31,8 @@ namespace DAL
 
             builder.Entity<Diagnosis>()
                    .HasMany(e => e.DiagnosisKeys)
-                   .WithOne(c => c.Diagnosis)
-                   .HasForeignKey(c => c.DiagnosisId);
-
-            //builder.Entity<DiagnosisKey>()
-            //       .HasOne(e => e.Diagnosis)
-            //       .WithMany(c => c.DiagnosisKeys);
-
+                   .WithOne(c => c.Diagnosis);
+                  
         } 
 
     }

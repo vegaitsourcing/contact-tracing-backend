@@ -17,6 +17,10 @@ namespace DAL.Configurations
                 .HasMaxLength(50);
 
             builder
+                .Property(m => m.Token);
+
+
+            builder
                 .ToTable("Users");
         }
     }

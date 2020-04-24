@@ -12,5 +12,7 @@ namespace Core.Models
 
         [Required]
         public string HealthID { get; set; }
+
+        public string Token { get; set; }
     }
 }

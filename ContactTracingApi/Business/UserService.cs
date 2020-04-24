@@ -26,5 +26,16 @@ namespace Business
         {
             return await _context.Users.FindAsync(id);
         }
+
+        public async Task<User> GetUserByHealthId(string healthId)
+        {
+            return await _context.Users.SingleAsync(u => u.HealthID.Equals(healthId));
+        }
+
+        public async Task<int> UpdateUser(User user)
+        {
+            _context.Users.Update(user);
+            return await _context.SaveChangesAsync();
+        }
     }
 }
