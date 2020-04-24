@@ -12,10 +12,12 @@ namespace Business
     public class DiagnosisService : IDiagnosisService
     {
         private readonly CTDbContext _context;
+
         public DiagnosisService(CTDbContext context)
         {
             _context = context;
         }
+
         public async Task<Diagnosis> AddDiagnosis(Diagnosis newDiagnosis)
         {
             await _context.Diagnosis.AddAsync(newDiagnosis);

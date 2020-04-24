@@ -5,7 +5,6 @@ using AutoMapper;
 using Core.DTOs;
 using Core.Models;
 using Core.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContactTracingApi.Controllers
@@ -28,19 +27,12 @@ namespace ContactTracingApi.Controllers
             _diagnosisKeyService = diagnosisKeyService;
         }
 
-        [HttpGet("all")]
-        public async Task<ActionResult<IEnumerable<DiagnosisDTO>>> getDiagnoses()
-        {
-            var diagnoses = await _diagnosisService.GetAllDiagnoses();
-            var diagnosisKey = await _diagnosisKeyService.GetAllDiagnosisKeys();
-
-            return Ok(diagnoses);
-        }
-
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DiagnosisDTO>>> getDiagnosesByDate(DateTime date)
+        public async Task<ActionResult<IEnumerable<DiagnosisDTO>>> getDiagnosesAfterDate(DateTime date)
         {
             var diagnoses = await _diagnosisService.GetDiagnosesAfterDate(date);
+
+            // TODO figure this out
             var diagnosisKey = await _diagnosisKeyService.GetAllDiagnosisKeys();
 
             return Ok(diagnoses);
