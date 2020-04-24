@@ -10,10 +10,12 @@ namespace Core.Models
         [Key]
         public int Id { get; set; }
 
-        [ForeignKey("DiagnosisKeyId")]
         public ICollection<DiagnosisKey> DiagnosisKeys { get; set; }
 
         public User User { get; set; }
+
+        [ForeignKey("User")]
+        public int UserId { get; set; }
 
         public bool Sent { get; set; }
 

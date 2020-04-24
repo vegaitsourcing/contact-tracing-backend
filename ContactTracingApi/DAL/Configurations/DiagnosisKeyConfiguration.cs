@@ -21,7 +21,7 @@ namespace DAL.Configurations
                .IsRequired();
 
             builder.
-                Property(m => m.Diagnosis);
+                Property(m => m.DiagnosisId);
 
             builder
                 .ToTable("DiagnosisKeys");

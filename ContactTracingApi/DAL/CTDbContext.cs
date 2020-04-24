@@ -12,6 +12,7 @@ namespace DAL
         public DbSet<HealthUser> HealthUsers { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<DiagnosisKey> DiagnosisKeys { get; set; }
+        public DbSet<Diagnosis> Diagnosis { get; set; }
 
         public CTDbContext(DbContextOptions<CTDbContext> options)
             : base(options)
@@ -28,9 +29,10 @@ namespace DAL
             builder
                 .ApplyConfiguration(new DiagnosisConfiguration());
 
-            //builder.Entity<Diagnosis>()
-            //       .HasMany(e => e.DiagnosisKeys)
-            //       .WithOne(c => c.Diagnosis);
+            builder.Entity<Diagnosis>()
+                   .HasMany(e => e.DiagnosisKeys)
+                   .WithOne(c => c.Diagnosis)
+                   .HasForeignKey(c => c.DiagnosisId);
 
             //builder.Entity<DiagnosisKey>()
             //       .HasOne(e => e.Diagnosis)

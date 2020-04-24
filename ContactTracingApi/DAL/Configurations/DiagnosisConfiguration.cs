@@ -12,10 +12,7 @@ namespace DAL.Configurations
                 .HasKey(m => m.Id);
 
             builder
-                .Property(m => m.DiagnosisKeys);
-
-            builder
-                .Property(m => m.User);
+                .Property(m => m.UserId);
 
             builder
                 .Property(m => m.Sent);

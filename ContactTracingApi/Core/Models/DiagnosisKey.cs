@@ -14,7 +14,9 @@ namespace Core.Models
         [Required]
         public DateTime Date { get; set; }
 
-        [ForeignKey("DiagnosisId")]
+        [ForeignKey("Diagnosis")]
+        public int DiagnosisId { get; set; }
+
         public Diagnosis Diagnosis { get; set; }
     }
 }
