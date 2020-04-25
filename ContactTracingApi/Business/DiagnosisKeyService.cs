@@ -16,9 +16,19 @@ namespace Business
         {
             _context = context;
         }
+
         public async Task<DiagnosisKey> AddDiagnosisKey(DiagnosisKey newDiagnosisKey)
         {
             await _context.DiagnosisKeys.AddAsync(newDiagnosisKey);
+
+            await _context.SaveChangesAsync();
+
+            return newDiagnosisKey;
+        }
+
+        public async Task<IEnumerable<DiagnosisKey>> AddDiagnosisKeys(IEnumerable<DiagnosisKey> newDiagnosisKey)
+        {
+            await _context.DiagnosisKeys.AddRangeAsync(newDiagnosisKey);
 
             await _context.SaveChangesAsync();
 

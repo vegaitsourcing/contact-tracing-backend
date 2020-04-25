@@ -14,6 +14,5 @@ namespace Core.Models
         [Required]
         public DateTime Date { get; set; }
 
-        public Diagnosis Diagnosis { get; set; }
     }
 }

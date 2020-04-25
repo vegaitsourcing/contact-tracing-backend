@@ -11,8 +11,6 @@ namespace Core.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<DiagnosisDTO, Diagnosis>();
-            CreateMap<Diagnosis, DiagnosisDTO>();
             CreateMap<DiagnosisKeyDTO, DiagnosisKey>();
             CreateMap<DiagnosisKey, DiagnosisKeyDTO>();
         }

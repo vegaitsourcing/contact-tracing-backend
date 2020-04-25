@@ -1,18 +1,13 @@
-﻿
-using Core.Models;
+﻿using Core.Models;
 using DAL.Configurations;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DAL
 {
     public class CTDbContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
         public DbSet<DiagnosisKey> DiagnosisKeys { get; set; }
-        public DbSet<Diagnosis> Diagnosis { get; set; }
+    
 
         public CTDbContext(DbContextOptions<CTDbContext> options)
             : base(options)
@@ -21,16 +16,7 @@ namespace DAL
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
-                .ApplyConfiguration(new UserConfiguration());
-            builder
                 .ApplyConfiguration(new DiagnosisKeyConfiguration());
-            builder
-                .ApplyConfiguration(new DiagnosisConfiguration());
-
-            builder.Entity<Diagnosis>()
-                   .HasMany(e => e.DiagnosisKeys)
-                   .WithOne(c => c.Diagnosis);
-                  
         } 
 
     }

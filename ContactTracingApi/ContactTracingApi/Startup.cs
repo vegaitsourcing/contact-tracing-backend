@@ -47,11 +47,7 @@ namespace ContactTracingApi
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
 
-            services.AddTransient<IDiagnosisService, DiagnosisService>();
-            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IDiagnosisKeyService, DiagnosisKeyService>();
-
-
 
         }
 
