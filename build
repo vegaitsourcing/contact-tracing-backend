@@ -1,0 +1,14 @@
+pipeline {
+  agent {
+    label 'Windows Slave 1'
+  }
+  stages {
+    stage('Build') {
+      steps {
+        dir('ContactTracingApi') {
+           bat 'dotnet build --configuration Release'
+        }
+      }
+    }
+  }
+}
