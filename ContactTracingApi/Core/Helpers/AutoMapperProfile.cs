@@ -11,8 +11,6 @@ namespace Core.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<HealthUser, HealthUserDTO>();
-            CreateMap<HealthUserDTO, HealthUser>();
         }
 
     }

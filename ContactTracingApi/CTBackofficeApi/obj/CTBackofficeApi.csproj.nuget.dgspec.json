@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -72,6 +75,9 @@
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -144,6 +150,9 @@
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\CTBackofficeApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -251,6 +260,9 @@
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
