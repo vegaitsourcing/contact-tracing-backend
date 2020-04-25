@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj": {}
+    "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj": {}
   },
   "projects": {
-    "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj": {
+    "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj",
+        "projectUniqueName": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/Core.csproj",
-        "packagesPath": "/Users/stevan/.nuget/packages/",
-        "outputPath": "/Users/stevan/Work/Vega/eu_vs_virus/contact-tracing-backend/ContactTracingApi/Core/obj/",
+        "projectPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vladi\\Desktop\\contact-tracing-backend\\ContactTracingApi\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/stevan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
