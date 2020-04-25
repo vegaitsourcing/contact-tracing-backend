@@ -6,7 +6,7 @@ An API, written in .NET Core 3.1, that is used to manipulate with diagnosis keys
 
 API Documentation: https://github.com/vegaitsourcing/contact-tracing-backend/wiki/API-Documentation
 
-## How to run:
+## How to run
 
     git clone https://github.com/vegaitsourcing/contact-tracing-backend.git
 
