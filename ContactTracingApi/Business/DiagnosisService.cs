@@ -40,7 +40,9 @@ namespace Business
 
         public async Task<IEnumerable<Diagnosis>> GetAllDiagnoses()
         {
-            return await _context.Diagnosis.ToListAsync();
+            return await _context.Diagnosis
+                .Include(d => d.DiagnosisKeys)
+                .ToListAsync();
         }
 
         public async Task<Diagnosis> GetDiagnosisById(int id)
@@ -50,8 +52,10 @@ namespace Business
 
         public async Task<IEnumerable<Diagnosis>> GetDiagnosesAfterDate(DateTime date)
         {
-            return await _context.Diagnosis.Include(x=>x.DiagnosisKeys).
-                Where(d => d.Date.Date > date.Date).ToListAsync();
+            return await _context.Diagnosis
+                .Include(d => d.DiagnosisKeys)
+                .Where(d => d.Date.Date > date.Date)
+                .ToListAsync();
         }
     }
 }

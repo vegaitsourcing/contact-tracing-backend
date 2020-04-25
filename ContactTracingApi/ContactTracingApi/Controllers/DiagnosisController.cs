@@ -18,17 +18,14 @@ namespace ContactTracingApi.Controllers
 
         private readonly IDiagnosisService _diagnosisService;
 
-        private readonly IDiagnosisKeyService _diagnosisKeyService;
-
-        public DiagnosisController(IMapper mapper, IDiagnosisService diagnosisService, IDiagnosisKeyService diagnosisKeyService)
+        public DiagnosisController(IMapper mapper, IDiagnosisService diagnosisService)
         {
             _mapper = mapper;
             _diagnosisService = diagnosisService;
-            _diagnosisKeyService = diagnosisKeyService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DiagnosisDTO>>> getDiagnosesAfterDate(DateTime date)
+        public async Task<ActionResult<IEnumerable<DiagnosisDTO>>> GetDiagnosesAfterDate(DateTime date)
         {
             var diagnoses = await _diagnosisService.GetDiagnosesAfterDate(date);
 
@@ -36,7 +33,7 @@ namespace ContactTracingApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<DiagnosisDTO>> postDiagnosis(DiagnosisDTO diagnosisDTO)
+        public async Task<ActionResult<DiagnosisDTO>> PostDiagnosis(DiagnosisDTO diagnosisDTO)
         {
             try
             {
