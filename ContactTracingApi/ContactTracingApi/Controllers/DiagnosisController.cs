@@ -32,9 +32,6 @@ namespace ContactTracingApi.Controllers
         {
             var diagnoses = await _diagnosisService.GetDiagnosesAfterDate(date);
 
-            // TODO figure this out
-            var diagnosisKey = await _diagnosisKeyService.GetAllDiagnosisKeys();
-
             return Ok(diagnoses);
         }
 

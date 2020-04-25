@@ -50,7 +50,8 @@ namespace Business
 
         public async Task<IEnumerable<Diagnosis>> GetDiagnosesAfterDate(DateTime date)
         {
-            return await _context.Diagnosis.Where(d => d.Date.Date > date.Date).ToListAsync();
+            return await _context.Diagnosis.Include(x=>x.DiagnosisKeys).
+                Where(d => d.Date.Date > date.Date).ToListAsync();
         }
     }
 }
