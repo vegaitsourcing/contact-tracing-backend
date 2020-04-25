@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ContactTracingApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class DiagnosisController : ControllerBase
     {
 
