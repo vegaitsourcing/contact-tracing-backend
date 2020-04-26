@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Core.Models;
+using VegaIT.Core.Models;
 
-namespace DAL.Configurations
+namespace VegaIT.DAL.Configurations
 {
     public class DiagnosisKeyConfiguration : IEntityTypeConfiguration<DiagnosisKey>
     {

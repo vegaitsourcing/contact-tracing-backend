@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
-using Business;
-using Core;
-using Core.Helpers;
-using Core.Services;
-using DAL;
+using VegaIT.Business;
+using VegaIT.Core.Helpers;
+using VegaIT.Core.Services;
+using VegaIT.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace ContactTracingApi
+namespace VegaIT.API
 {
     public class Startup
     {
@@ -47,11 +41,7 @@ namespace ContactTracingApi
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
 
-            services.AddTransient<IDiagnosisService, DiagnosisService>();
-            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IDiagnosisKeyService, DiagnosisKeyService>();
-
-
 
         }
 

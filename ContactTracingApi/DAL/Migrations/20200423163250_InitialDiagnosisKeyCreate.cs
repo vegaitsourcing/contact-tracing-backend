@@ -1,8 +1,7 @@
-﻿using Core.Models;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace DAL.Migrations
+namespace VegaIT.DAL.Migrations
 {
     public partial class InitialDiagnosisKeyCreate : Migration
     {
@@ -15,13 +14,11 @@ namespace DAL.Migrations
                    Id = table.Column<int>(nullable: false)
                        .Annotation("SqlServer:Identity", "1, 1"),
                    DailyKey = table.Column<string>(maxLength: 128, nullable: true),
-                   DiagnosisId = table.Column<int>(nullable: false),
                    Date = table.Column<DateTime>(nullable: false)
                },
                constraints: table =>
                {
                    table.PrimaryKey("PK_DiagnosisKeys", x => x.Id);
-                  
                });
         }
 
