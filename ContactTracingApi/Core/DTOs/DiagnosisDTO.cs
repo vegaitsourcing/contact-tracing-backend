@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Core.DTOs
+namespace VegaIT.Core.DTOs
 {
     public class DiagnosisDTO
     {

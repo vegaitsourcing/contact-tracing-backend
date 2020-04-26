@@ -1,11 +1,11 @@
-﻿using Core.DTOs;
-using Core.Models;
+﻿using VegaIT.Core.DTOs;
+using VegaIT.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using AutoMapper;
 
-namespace Core.Helpers
+namespace VegaIT.Core.Helpers
 {
     public class AutoMapperProfile : Profile
     {
