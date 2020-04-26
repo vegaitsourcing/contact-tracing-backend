@@ -16,7 +16,7 @@ pipeline {
       }
       steps {
         dir('src') {
-           bat 'dotnet publish --configuration Release'
+           bat 'dotnet publish /p:Configuration=Release /p:EnvironmentName=Staging'
            bat 'appcmd stop apppool /apppool.name:"EUvsCovid API" | exit 0'
 	   bat 'del /F/Q/S "C:\\inetpub\\wwwroot\\EUvsCovid API\\*.*"'
 	   bat 'xcopy "API\\bin\\Release\\netcoreapp3.1\\publish" "C:\\inetpub\\wwwroot\\EUvsCovid API" /S'
