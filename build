@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir('ContactTracingApi') {
+        dir('src') {
            bat 'dotnet build --configuration Release'
         }
       }
