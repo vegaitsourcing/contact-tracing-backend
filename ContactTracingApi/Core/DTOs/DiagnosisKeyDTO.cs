@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Core.DTOs
+namespace VegaIT.Core.DTOs
 {
     public class DiagnosisKeyDTO
     {

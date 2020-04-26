@@ -1,14 +1,13 @@
-﻿using Core.Models;
-using Core.Services;
-using DAL;
+﻿using VegaIT.Core.Models;
+using VegaIT.Core.Services;
+using VegaIT.DAL;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business
+namespace VegaIT.Business
 {
     public class DiagnosisKeyService : IDiagnosisKeyService
     {

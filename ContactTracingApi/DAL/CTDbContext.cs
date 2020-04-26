@@ -1,8 +1,8 @@
-﻿using Core.Models;
-using DAL.Configurations;
+﻿using VegaIT.Core.Models;
+using VegaIT.DAL.Configurations;
 using Microsoft.EntityFrameworkCore;
 
-namespace DAL
+namespace VegaIT.DAL
 {
     public class CTDbContext : DbContext
     {

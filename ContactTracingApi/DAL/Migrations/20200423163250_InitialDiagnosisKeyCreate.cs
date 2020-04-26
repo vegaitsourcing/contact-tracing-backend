@@ -1,8 +1,7 @@
-﻿using Core.Models;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace DAL.Migrations
+namespace VegaIT.DAL.Migrations
 {
     public partial class InitialDiagnosisKeyCreate : Migration
     {

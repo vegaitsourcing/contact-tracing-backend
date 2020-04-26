@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using Core.DTOs;
-using Core.Models;
-using Core.Services;
+using VegaIT.Core.DTOs;
+using VegaIT.Core.Models;
+using VegaIT.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ContactTracingApi.Controllers
+namespace VegaIT.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

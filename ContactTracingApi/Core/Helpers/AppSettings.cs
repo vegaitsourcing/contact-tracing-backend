@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Core.Helpers
+namespace VegaIT.Core.Helpers
 {
     public class AppSettings
     {

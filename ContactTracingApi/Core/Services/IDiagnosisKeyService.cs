@@ -1,10 +1,8 @@
-﻿using Core.Models;
-using System;
+﻿using VegaIT.Core.Models;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Services
+namespace VegaIT.Core.Services
 {
     public interface IDiagnosisKeyService
     {
