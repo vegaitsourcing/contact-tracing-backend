@@ -27,8 +27,8 @@ namespace ContactTracingApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DiagnosisKeyDTO>>> GetDiagnosesKeys()
         {
-            var diagnoses = await _diagnosisKeyService.GetAllDiagnosisKeys();
-
+            var diagnoses = await _diagnosisKeyService.GetLatestDiagnosisKeys();
+               
             return Ok(diagnoses);
         }
 

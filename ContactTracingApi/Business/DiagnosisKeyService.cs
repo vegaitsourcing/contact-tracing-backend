@@ -4,6 +4,7 @@ using DAL;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,9 +47,9 @@ namespace Business
             return diagnosiskey;
         }
 
-        public async Task<IEnumerable<DiagnosisKey>> GetAllDiagnosisKeys()
+        public async Task<IEnumerable<DiagnosisKey>> GetLatestDiagnosisKeys()
         {
-            return await _context.DiagnosisKeys.ToListAsync();
+            return await _context.DiagnosisKeys.Where(d => d.Date.Date > DateTime.Now.AddDays(-14)).ToListAsync();
         }
 
         public async Task<DiagnosisKey> GetDiagnosisKeyById(int id)
