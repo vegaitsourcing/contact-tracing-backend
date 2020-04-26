@@ -26,7 +26,7 @@ namespace VegaIT.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<CTDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default"), x => x.MigrationsAssembly("DAL")));
+            services.AddDbContext<CTDbContext>(options => options.UseMySql(Configuration.GetConnectionString("Default"), x => x.MigrationsAssembly("DAL")));
             services.AddCors();
 
             services.AddAutoMapper(c => c.AddProfile<AutoMapperProfile>(), typeof(Startup));
