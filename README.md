@@ -1,3 +1,5 @@
+![Build Status](https://build.vegaitsourcing.rs/buildStatus/icon?job=contact-tracing%2Fbackend%2Fmaster)
+
 # Contact Tracing API
 
 ## Description
